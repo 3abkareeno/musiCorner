@@ -1,11 +1,15 @@
 
 header
     $header-height: 70px
+
     background-color: white
     height: $header-height
     width: 100%
-    position: relative
+    position: fixed
+    top: 0
+    z-index: 99
     white-space: nowrap
+    min-width: 750px
 
     .add
         float: left
@@ -30,6 +34,7 @@ header
         top: 50%
         transform: translateY(-50%)
         margin-left: 50px
+        cursor: pointer
 
 
     .search-box
@@ -56,6 +61,7 @@ header
             position: absolute
             margin-left: 11px
             z-index: 1
+            color: $main-color-2
 
     .profile
         position: absolute
@@ -66,14 +72,40 @@ header
         height: $header-height
         margin: 0 30px
         transition: all 300ms
+        cursor: pointer
+
         &:hover
             background-color: rgba($bg-color, 0.5)
         p
             margin: 5px
+            color: $main-color-2
 
-        .photo
+        img.photo
             +size(50px)
-            background-image: url(../img/default-pp.jpg)
-            background-size: cover
-            background-position: 50% 50%
             border-radius: 50%
+
+        .profile-dropdown
+            display: none
+            position: absolute
+            top: $header-height
+            left: 0
+            list-style: none
+            border-left: 2px solid $main-color-2
+            border-right: 2px solid $main-color-2
+            border-bottom: 2px solid $main-color-2
+
+            li
+                color: $main-color-2
+                background-color: white
+                padding: 10px 40px
+                border-bottom: 1px solid $main-color-2
+
+                &:hover
+                    color: white
+                    background-color: $flat-midnight-blue
+
+                i
+                    margin-left: 10px
+
+            a:last-child li
+                border-bottom: none

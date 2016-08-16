@@ -20,11 +20,20 @@
 			<img class="logo" src="img/Logo.png" alt="LOGO">
 			<h1>Discover new music!</h1>
 			<form class="signup" method="post" action="action.html">
-				<input name="username" type="text" placeholder="Name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Name'" maxlength="15" required>
+				<input name="name" type="text" placeholder="Full Name" onfocus="this.placeholder=''" onblur="this.placeholder = 'Full Name'" maxlength="15" required>
+
+				<input name="username" type="text" placeholder="Username" onfocus="this.placeholder=''" onblur="this.placeholder = 'Username'" maxlength="15" required></input>
+				<p class="validation">Username alredy exists !</p>
+
 				<input name="useremail" type="email" placeholder="Email" onfocus="this.placeholder=''" onblur="this.placeholder = 'Email'" required>
+				<p class="validation">Email alredy registered !</p>
+
 				<input name="userpass" type="password" placeholder="Password" onfocus="this.placeholder=''" onblur="this.placeholder = 'Pasword'" required>
+
 				<input type="submit" value="Sign up">
-				<p>or <a href="signin.html">Login</a></p>
+
+
+				<p class="login">or <a href="signin.html">Login</a></p>
 			</form>
 		</div>
 	</div>
@@ -37,6 +46,8 @@
 			$(window).resize(function(){
 			  $(".landing-container").height($(window).height());
 			});
+
+
 		});
 	</script>
 </body>
