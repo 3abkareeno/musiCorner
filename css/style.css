@@ -322,6 +322,26 @@ header .profile .profile-dropdown a:last-child li {
   bottom: 5px;
 }
 
+.account {
+  margin: 20px;
+  height: 220px;
+  width: 180px;
+  background-color: #F39C12;
+  color: white;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.account img {
+  height: 180px;
+  width: 180px;
+}
+.account p {
+  margin: 2px;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
 .landing-container {
   background-image: url(../img/landing-bg.jpg);
   background-position: 50% 50%;
@@ -537,4 +557,176 @@ body {
   margin-top: 50px;
   color: #aaa;
   font-style: italic;
+}
+
+#profile {
+  padding-top: 100px;
+}
+#profile .container {
+  padding-top: 1px;
+  margin-bottom: 30px;
+  width: 860px;
+}
+#profile img.main-photo {
+  display: block;
+  margin: 20px auto;
+  height: 200px;
+  border: 2px solid #E67E22;
+  padding: 5px;
+}
+#profile p.full-name {
+  text-align: center;
+  font-size: 2rem;
+  color: #E67E22;
+}
+#profile button[name="follow"], #profile button[name="edit"] {
+  width: 150px;
+  background-color: #E67E22;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: background-color 300ms;
+          transition: background-color 300ms;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px;
+}
+#profile button[name="follow"] i, #profile button[name="edit"] i {
+  margin-right: 10px;
+}
+#profile button[name="follow"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+#profile button[name="follow"]:hover {
+  background-color: #F39C12;
+}
+#profile button[name="edit"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #2C3E50;
+  color: white;
+}
+#profile button[name="edit"]:hover {
+  background-color: #46627f;
+}
+#profile .song-list {
+  margin: 0 20px;
+}
+#profile .song-list .mood {
+  margin: 10px;
+  margin-left: 10%;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #2C3E50;
+}
+#profile .song-list hr {
+  height: 1px;
+  border: none;
+  background-color: #2C3E50;
+  width: 90%;
+}
+#profile h1 {
+  color: #2C3E50;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 30px;
+}
+#profile .edit-info {
+  width: 40%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+#profile .edit-info input {
+  margin: 30px auto;
+}
+
+#add {
+  padding-top: 100px;
+}
+#add .container {
+  width: 760px;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+#add .container h1 {
+  color: #34495E;
+  text-align: center;
+}
+#add .container h1 i {
+  color: #E67E22;
+  font-size: 6rem;
+  margin-bottom: 20px;
+}
+#add .container .add {
+  width: 80%;
+  margin: 50px auto;
+}
+#add .container .add input {
+  margin: 30px;
+}
+#add .container .add input[type=submit] {
+  width: 150px;
+  margin: 40px auto;
+}
+#add .container .add input[type=file] {
+  width: 300px;
+  display: inline-block;
+  margin: 0;
+  border: none;
+}
+#add .container .add .group {
+  margin: 30px;
+}
+#add .container .add .group label {
+  color: #f0b37e;
+  margin-right: 30px;
+  margin-left: 7px;
+}
+#add .container .add .group select {
+  height: 40px;
+  width: 150px;
+  color: #34495E;
+  border: 1px solid #E67E22;
+  padding-left: 10px;
+}
+#add .container .add .group select:focus {
+  outline: none;
+}
+
+#results {
+  padding-top: 100px;
+}
+#results .container {
+  width: 760px;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+#results .container h1 {
+  color: #34495E;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 50px;
+}
+#results .container h1 i {
+  color: #E67E22;
+  margin-right: 10px;
+}
+#results .container .category {
+  margin: 10px;
+  margin-left: 10%;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #2C3E50;
+}
+#results .container hr {
+  height: 1px;
+  border: none;
+  background-color: #2C3E50;
+  width: 90%;
 }

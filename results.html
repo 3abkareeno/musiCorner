@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Search Results</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body id="results">
+	<header class="card cf">
+		<a href="#">
+			<div class="add">
+				<i class="fa fa-headphones" aria-hidden="true"></i>
+				<i class="fa fa-plus" aria-hidden="true"></i>
+			</div>
+		</a>
+		<a href="home.html"><img class="logo" src="img/Logo.png" alt="LOGO"></a>
+		<div class="search-box">
+			<span class="icon"><i class="fa fa-search"></i></span>
+			<input type="search" id="search" placeholder="Search..." />
+		</div>
+		<div class="profile">
+			<p>Abdelrahman</p>
+			<img src="img/default-pp.jpg" alt="Profile Picture" class="photo">
+			<ul class="profile-dropdown">
+				<a href="#">
+					<li>View Profile</li>
+				</a>
+				<a href="#">
+					<li>Edit Profile</li>
+				</a>
+				<a href="#">
+					<li>Logout <i class="fa fa-sign-out"></i></li>
+				</a>
+			</ul>
+		</div>
+	</header>
+
+	<div class="container card cf">
+		<h1><i class="fa fa-search"></i> Search results for "Happy"</h1>
+
+		<p class="category">Music</p>
+		<hr/>
+		<div class="music-results">
+			<div class="song card">
+				<img src="img/song-demo.jpg" alt="Can't Feel my Face" class="pic">
+				<p class="name">Can't Feel my Face</p>
+				<p class="info">by <span>The Week End</span></p>
+				<button class="yt-link" onclick="location.href = '#';" name="login"><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
+			</div>
+			<div class="song card">
+				<img src="img/song-demo.jpg" alt="Can't Feel my Face" class="pic">
+				<p class="name">Can't Feel my Face</p>
+				<p class="info">by <span>The Week End</span></p>
+				<button class="yt-link" onclick="location.href = '#';" name="login"><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
+			</div>
+			<div class="song card">
+				<img src="img/song-demo.jpg" alt="Can't Feel my Face" class="pic">
+				<p class="name">Can't Feel my Face</p>
+				<p class="info">by <span>The Week End</span></p>
+				<button class="yt-link" onclick="location.href = '#';" name="login"><i class="fa fa-youtube-play" aria-hidden="true"></i></button>
+			</div>
+		</div>
+
+
+		<p class="category">People</p>
+		<hr/>
+		<div class="people-results">
+			<a href="#">
+				<div class="account card">
+					<img src="img/default-pp.jpg" alt="" class="photo">
+					<p class="name">Mostafa Nabil</p>
+				</div>
+				<div class="account card">
+					<img src="img/default-pp.jpg" alt="" class="photo">
+					<p class="name">Mahmoud Amin</p>
+				</div>
+			</a>
+		</div>
+
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/header.js"></script>
+</body>
+
+</html>
