@@ -99,6 +99,8 @@ header .add {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 300ms;
+          transition: all 300ms;
   background-color: #F39C12;
 }
 header .add .fa-headphones {
@@ -110,6 +112,9 @@ header .add .fa-plus {
   margin-left: -0.5rem;
   margin-top: -0.8rem;
   font-size: 1.5rem;
+}
+header .add:hover {
+  background-color: #f5b043;
 }
 header .logo {
   width: 130px;
@@ -480,7 +485,7 @@ body {
   margin: 0 auto;
   border-radius: 50%;
 }
-#home .sidebar .mini-profile button.edit {
+#home .sidebar .mini-profile a.edit {
   color: white;
   font-size: 0.9rem;
   cursor: pointer;
@@ -491,10 +496,13 @@ body {
   background: transparent;
   border: none;
 }
-#home .sidebar .mini-profile button.edit:hover {
+#home .sidebar .mini-profile a.edit:hover {
   color: #2C3E50;
 }
-#home .sidebar .mini-profile button.edit i {
+#home .sidebar .mini-profile a.edit:focus {
+  outline: none;
+}
+#home .sidebar .mini-profile a.edit i {
   padding-right: 5px;
 }
 #home .sidebar ul.buttons {
