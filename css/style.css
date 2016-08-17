@@ -237,7 +237,7 @@ header .profile .profile-dropdown a:last-child li {
 .song p.info span {
   font-weight: bold;
 }
-.song button {
+.song .yt-link {
   position: absolute;
   bottom: -5px;
   right: -5px;
@@ -252,7 +252,7 @@ header .profile .profile-dropdown a:last-child li {
   color: white;
   cursor: pointer;
 }
-.song button:focus {
+.song .yt-link:focus {
   outline: none;
 }
 
@@ -307,13 +307,13 @@ header .profile .profile-dropdown a:last-child li {
 .friends-content .friend .latest-music .song p {
   display: none;
 }
-.friends-content .friend .latest-music .song button {
+.friends-content .friend .latest-music .song .yt-link {
   height: 30px;
   width: 30px;
   line-height: 30px;
   font-size: 1rem;
 }
-.friends-content .friend a {
+.friends-content .friend a.cta {
   color: white;
   background-color: #2C3E50;
   padding: 10px;
