@@ -13,34 +13,10 @@
 </head>
 
 <body id="profile">
-	<header class="card cf">
-		<a href="addsong.html">
-			<div class="add">
-				<i class="fa fa-headphones" aria-hidden="true"></i>
-				<i class="fa fa-plus" aria-hidden="true"></i>
-			</div>
-		</a>
-		<a href="home.html"><img class="logo" src="img/Logo.png" alt="LOGO"></a>
-		<div class="search-box">
-			<span class="icon"><i class="fa fa-search"></i></span>
-			<input type="search" id="search" placeholder="Search..." />
-		</div>
-		<div class="profile">
-			<p>Abdelrahman</p>
-			<img src="img/default-pp.jpg" alt="Profile Picture" class="photo">
-			<ul class="profile-dropdown">
-				<a href="#">
-					<li>View Profile</li>
-				</a>
-				<a href="#">
-					<li>Edit Profile</li>
-				</a>
-				<a href="#">
-					<li>Logout <i class="fa fa-sign-out"></i></li>
-				</a>
-			</ul>
-		</div>
-	</header>
+
+	<?php
+		include '_header.html';
+	?>
 
 	<div class="container card cf">
 		<img src="img/default-pp.jpg" alt="" class="main-photo">
@@ -50,7 +26,7 @@
 
 			<h1>Edit your info</h1>
 
-			<form class="edit" method="post" action="">
+			<form class="edit-form" method="post" action="">
 				<input name="name" type="text" placeholder="New Full Name" onfocus="this.placeholder=''" onblur="this.placeholder = 'New Full Name'" maxlength="15" required>
 
 				<input name="useremail" type="email" placeholder="New Email" onfocus="this.placeholder=''" onblur="this.placeholder = 'New Email'" required>

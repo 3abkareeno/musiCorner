@@ -8,8 +8,6 @@ header
     position: fixed
     top: 0
     z-index: 99
-    white-space: nowrap
-    min-width: 750px
 
     .add
         float: left
@@ -49,8 +47,11 @@ header
         display: flex
         align-items: center
 
+        .search
+            position: relative
+
         input#search
-            width: 250px
+            max-width: 250px
             height: 40px
             border: none
             font-size: 10pt
@@ -64,6 +65,8 @@ header
         .icon
             position: absolute
             margin-left: 11px
+            top: 50%
+            transform: translateY(-50%)
             z-index: 1
             color: $main-color-2
 

@@ -1,10 +1,8 @@
 #profile
-    padding-top: 100px
-
     .container
         padding-top: 1px
         margin-bottom: 30px
-        width: 860px
+        max-width: 860px
 
     img.main-photo
         display: block
@@ -18,28 +16,28 @@
         font-size: 2rem
         color: $main-color-2
 
-    button[name="follow"], button[name="edit"]
-        width: 150px
+    .follow, .edit
+        width: 130px
         background-color: $main-color-2
         border-radius: 10px
         cursor: pointer
         transition: background-color 300ms
         color: white
         border: none
-        font-size: 1.1rem
+        font-size: 1rem
         padding: 10px
 
         i
             margin-right: 10px
 
-    button[name="follow"]
+    .follow
         position: absolute
         top: 10px
         right: 10px
         &:hover
             background-color: $main-color-1
 
-    button[name="edit"]
+    .edit
         position: absolute
         top: 10px
         right: 10px

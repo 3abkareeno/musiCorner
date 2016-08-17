@@ -14,7 +14,7 @@
 <body>
 	<div class="landing-container">
 		<header class="cf">
-			<button type="button" onclick="location.href = 'signin.html';" name="login">Login</button>
+			<button type="button" onclick="location.href = 'signin.php';" name="login">Login</button>
 		</header>
 		<div class="container">
 			<img class="logo" src="img/Logo.png" alt="LOGO">
@@ -33,7 +33,7 @@
 				<input type="submit" value="Sign up">
 
 
-				<p class="login">or <a href="signin.html">Login</a></p>
+				<p class="login">or <a href="signin.php">Login</a></p>
 			</form>
 		</div>
 	</div>

@@ -30,6 +30,20 @@ a {
   color: black;
 }
 
+#add, #home, #profile, #results {
+  padding-top: 100px;
+}
+
+@media(max-width: 750px) {
+  #add, #home, #profile, #results {
+    padding-top: 80px;
+  }
+}
+@media(max-width: 540px) {
+  #add, #home, #profile, #results {
+    padding-top: 120px;
+  }
+}
 form input {
   display: block;
   background-color: transparent;
@@ -79,8 +93,6 @@ header {
   position: fixed;
   top: 0;
   z-index: 99;
-  white-space: nowrap;
-  min-width: 750px;
 }
 header .add {
   float: left;
@@ -140,8 +152,11 @@ header .search-box {
       -ms-flex-align: center;
           align-items: center;
 }
+header .search-box .search {
+  position: relative;
+}
 header .search-box input#search {
-  width: 250px;
+  max-width: 250px;
   height: 40px;
   border: none;
   font-size: 10pt;
@@ -156,6 +171,10 @@ header .search-box input#search:focus {
 header .search-box .icon {
   position: absolute;
   margin-left: 11px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: 1;
   color: #E67E22;
 }
@@ -441,14 +460,8 @@ body {
   color: #E67E22;
 }
 
-#home {
-  padding-top: 70px;
-}
-#home .container {
-  min-width: 750px;
-}
 #home .sidebar {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 280px;
   text-align: center;
   position: fixed;
@@ -525,7 +538,6 @@ body {
 #home .feed {
   float: right;
   width: 70%;
-  margin-top: 20px;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -567,13 +579,10 @@ body {
   font-style: italic;
 }
 
-#profile {
-  padding-top: 100px;
-}
 #profile .container {
   padding-top: 1px;
   margin-bottom: 30px;
-  width: 860px;
+  max-width: 860px;
 }
 #profile img.main-photo {
   display: block;
@@ -587,8 +596,8 @@ body {
   font-size: 2rem;
   color: #E67E22;
 }
-#profile button[name="follow"], #profile button[name="edit"] {
-  width: 150px;
+#profile .follow, #profile .edit {
+  width: 130px;
   background-color: #E67E22;
   border-radius: 10px;
   cursor: pointer;
@@ -596,28 +605,28 @@ body {
           transition: background-color 300ms;
   color: white;
   border: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 10px;
 }
-#profile button[name="follow"] i, #profile button[name="edit"] i {
+#profile .follow i, #profile .edit i {
   margin-right: 10px;
 }
-#profile button[name="follow"] {
+#profile .follow {
   position: absolute;
   top: 10px;
   right: 10px;
 }
-#profile button[name="follow"]:hover {
+#profile .follow:hover {
   background-color: #F39C12;
 }
-#profile button[name="edit"] {
+#profile .edit {
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: #2C3E50;
   color: white;
 }
-#profile button[name="edit"]:hover {
+#profile .edit:hover {
   background-color: #46627f;
 }
 #profile .song-list {
@@ -653,11 +662,8 @@ body {
   margin: 30px auto;
 }
 
-#add {
-  padding-top: 100px;
-}
 #add .container {
-  width: 760px;
+  max-width: 760px;
   padding: 40px;
   margin-bottom: 30px;
 }
@@ -706,11 +712,8 @@ body {
   outline: none;
 }
 
-#results {
-  padding-top: 100px;
-}
 #results .container {
-  width: 760px;
+  max-width: 760px;
   padding: 40px;
   margin-bottom: 30px;
 }
@@ -737,4 +740,117 @@ body {
   border: none;
   background-color: #2C3E50;
   width: 90%;
+}
+
+@media(max-width: 750px) {
+  header {
+    height: 60px;
+  }
+  header .add {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    -webkit-transition: none;
+            transition: none;
+  }
+  header .add .fa-headphones {
+    font-size: 2.2rem;
+  }
+  header .add .fa-plus {
+    font-size: 1.2rem;
+  }
+  header .logo {
+    width: 100px;
+    margin-left: 20px;
+  }
+  header .search-box {
+    right: 50px;
+    height: 60px;
+  }
+  header .profile {
+    right: 10px;
+    margin: 0px;
+    height: 60px;
+  }
+  header .profile p {
+    display: none;
+  }
+  header .profile img.photo {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+  }
+  header .profile .profile-dropdown {
+    top: 60px;
+    left: auto;
+    right: 0;
+  }
+  header .profile .profile-dropdown li {
+    color: #E67E22;
+    background-color: white;
+    padding: 10px 30px;
+  }
+}
+@media(max-width: 540px) {
+  header .search-box {
+    top: 60px;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #F39C12;
+    border-top: 1px solid #F39C12;
+    margin: 0;
+    height: 35px;
+  }
+  header .search-box .search {
+    margin: 0 auto;
+  }
+  header .search-box input#search {
+    width: 100%;
+    margin: 0 auto;
+    height: 30px;
+  }
+}
+@media(max-width: 750px) {
+  #home .sidebar {
+    position: static;
+    margin: 20px auto;
+    width: 70%;
+  }
+  #home .feed {
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #add .container {
+    width: 70%;
+  }
+  #add .container .add {
+    width: 100%;
+  }
+  #add .container .add input, #add .container .add .group {
+    margin-left: 0;
+  }
+
+  .landing-container .signup {
+    width: 50%;
+  }
+
+  #profile .container {
+    width: 90%;
+    padding-top: 50px;
+  }
+  #profile .edit-info {
+    width: 70%;
+  }
+
+  #results .container {
+    width: 70%;
+  }
+
+  .signin {
+    width: 90%;
+    padding-top: 20px;
+  }
 }

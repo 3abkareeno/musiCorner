@@ -13,35 +13,10 @@
 </head>
 
 <body id="home">
-	<header class="card cf">
-		<a href="addsong.html">
-			<div class="add">
-				<i class="fa fa-headphones" aria-hidden="true"></i>
-				<i class="fa fa-plus" aria-hidden="true"></i>
-			</div>
-		</a>
-		<a href="home.html"><img class="logo" src="img/Logo.png" alt="LOGO"></a>
-		<div class="search-box">
-			<span class="icon"><i class="fa fa-search"></i></span>
-			<input type="search" id="search" placeholder="Search..." />
-		</div>
-		<div class="profile">
-			<p>Abdelrahman</p>
-			<img src="img/default-pp.jpg" alt="Profile Picture" class="photo">
-			<ul class="profile-dropdown">
-				<a href="#">
-					<li>View Profile</li>
-				</a>
-				<a href="#">
-					<li>Edit Profile</li>
-				</a>
-				<a href="#">
-					<li>Logout <i class="fa fa-sign-out"></i></li>
-				</a>
-			</ul>
-		</div>
-	</header>
 
+	<?php
+		include '_header.html';
+	?>
 
 	<div class="container cf">
 		<div class="sidebar">
@@ -111,12 +86,18 @@
 			$("#home .music-content").show();
 			$("#home .friends-content").hide();
 
-			var sidebarWidth = $(".container").width() * 29 / 100;
-			$(".sidebar").width(sidebarWidth);
+			if($(window).width() > 750){
+				var sidebarWidth = $(".container").width() * 29 / 100;
+				$(".sidebar").width(sidebarWidth);
+			}
 
 			$(window).resize(function() {
-				sidebarWidth = $(".container").width() * 29 / 100;
-				$(".sidebar").width(sidebarWidth);
+				if($(window).width() > 750){
+					sidebarWidth = $(".container").width() * 29 / 100;
+					$(".sidebar").width(sidebarWidth);
+				}else{
+					$(".sidebar").removeAttr('style');
+				}
 			});
 
 			$("#home .sidebar ul.buttons li.music").click(function() {
