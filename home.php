@@ -45,7 +45,7 @@
 				</div>
 			</div>
 			<div class="friends-content">
-				<p class="no-friends">You have no friends</p>
+				<p class="no-friends">You have no friends...<br/>Check out these <span>new songs</span>!</p>
 				<div class="friend">
 					<div class="profile">
 						<div class="pic"></div>
@@ -101,6 +101,10 @@
 			});
 
 			$("#home .sidebar ul.buttons li.music").click(function() {
+				$("#home .music-content").show();
+				$("#home .friends-content").hide();
+			});
+			$("#home .friends-content span").click(function() {
 				$("#home .music-content").show();
 				$("#home .friends-content").hide();
 			});
